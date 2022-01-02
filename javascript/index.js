@@ -2,14 +2,14 @@
 const fs = require('fs');
 
 // import classes
-const PrimeChecker = require('lib/PrimeChecker');
+const PrimeChecker = require('./lib/PrimeChecker');
 
 // import txt and json files
-const current = require('results/currentPrime.json');
+const current = require('./results/currentPrime.json');
 
 const largestPrime = () => {
   const primeChecker = new PrimeChecker;
-  let x = current.curr;
+  let x = current.curr + 1;
 
   while (true) {
     if (primeChecker.isPrime(x)) {

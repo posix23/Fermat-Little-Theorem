@@ -2,6 +2,8 @@
 // Any prime number after 2 is odd and therefore, 2 will be used as the base number
 module.exports = class PrimeChecker {
   isPrime = x => {
+    if (x < 2) return false;
+
     if (x === 2) return true;
 
     if ((x <= Number.MAX_SAFE_INTEGER && x % 2 === 0) || this.#isEven(x)) return false;
@@ -18,7 +20,7 @@ module.exports = class PrimeChecker {
   #isEven = x => {
     x += ""; // Convert x to a string
 
-    if (parseInt(x[x.length - 1]) % 2 === 0) return true;
+    if (!(parseInt(x[x.length - 1]) % 2)) return true;
 
     return false;
   };
