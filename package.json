@@ -4,7 +4,7 @@
   "description": "## Introduction ### The theorem was created by Pierre de Fermat on 1640 to verify if a given integer is prime. If ![\\Large p](https://latex.codecogs.com/svg.latex?\\Large&space;p) is a prime number and ![\\Large a](https://latex.codecogs.com/svg.latex?\\Large&space;a) is not divisible by ![\\Large p](https://latex.codecogs.com/svg.latex?\\Large&space;p), then ![\\Large a^{p-1}-1](https://latex.codecogs.com/svg.latex?\\Large&space;a^{p-1}-1) is divisible by ![\\Large p](https://latex.codecogs.com/svg.latex?\\Large&space;p).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ."
   },
   "repository": {
     "type": "git",
