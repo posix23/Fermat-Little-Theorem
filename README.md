@@ -5,3 +5,6 @@
 
 ## Algorithm
 ### The algorithm aims to verify if a given integer is prime by rejecting every even integer bigger than 2 as defined as ![\Large 2k](https://latex.codecogs.com/svg.latex?\Large&space;2k) for ![\Large k](https://latex.codecogs.com/svg.latex?\Large&space;k) being any integer and even checks if a very large integer outside of JavaScript's max integer is a prime number.
+
+## Usage
+### Use npm run reset to reset all text files to their original form
