@@ -4,7 +4,7 @@ module.exports = class PrimeChecker {
   isPrime = x => {
     if (x === 2) return true;
 
-    if ((x <= 9007199254740991 && x % 2 === 0) || this.#isEven(x)) return false;
+    if ((x <= Number.MAX_SAFE_INTEGER && x % 2 === 0) || this.#isEven(x)) return false;
     
     // Max is 1024
     if (x < 1025 && Math.pow(2, x - 1) % x === 1) return true;
